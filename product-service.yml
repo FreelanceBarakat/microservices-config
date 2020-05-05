@@ -29,13 +29,13 @@ logging:
               BasicBinder: TRACE
 
 #spring.profiles.active=TEST_PROFILE
-eureka:
-  instance:
-    hostname: localhost
-    port: 8761
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+#eureka:
+#  instance:
+#    hostname: localhost
+#    port: 8761
+#  client:
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 myapp:
   publickey:
