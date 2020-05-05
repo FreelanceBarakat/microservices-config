@@ -29,28 +29,10 @@ logging:
               BasicBinder: TRACE
 
 #spring.profiles.active=TEST_PROFILE
-#eureka:
-#  instance:
-#    hostname: localhost
-#    port: 8761
-#  client:
-#    serviceUrl:
-#      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 myapp:
   publickey:
     name: oauthpublickey.cer
-
-security:
-  basic:
-  #    enabled: false
-  oauth2:
-    resource:
-      #      service-id: ${PREFIX:}resource
-      token-info-uri: http://localhost:8765/oauth/check_token
-    client:
-      client-id: web
-      client-secret: test
 
 ########################
 # Feign configs
