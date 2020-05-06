@@ -1,10 +1,6 @@
 server:
   port: 8870
 
-spring:
-  application:
-    name: product-service
-
   datasource:
     url: jdbc:h2:~/product-server-db
     driverClassName: org.h2.Driver
@@ -30,10 +26,6 @@ logging:
 
 #spring.profiles.active=TEST_PROFILE
 
-myapp:
-  publickey:
-    name: oauthpublickey.cer
-
 ########################
 # Feign configs
 ########################
@@ -45,9 +37,8 @@ feign:
         readTimeout: 5000
   hystrix:
     enabled: true
-###
-#hystrix
 
+#hystrix
 management:
   endpoints:
     web:

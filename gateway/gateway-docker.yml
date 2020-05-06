@@ -1,0 +1,29 @@
+spring:
+  aop:
+    proxyTargetClass: true
+
+server:
+  port: 8765
+
+zuul:
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 60000
+  sensitiveHeaders:
+  routes:
+    product-service:
+      path: /product-service/**
+      serviceId: product-service
+      stripPrefix: true
+    product-details:
+        path: /product-details/**
+        serviceId: product-details
+        stripPrefix: true
+#    endpoint:
+#      path: /**
+#      serviceId: product-service
+#      stripPrefix: false
+
+logging:
+  level.org.springframework.security: DEBUG
+

@@ -20,14 +20,3 @@ spring:
     sampler:
       probability: 1
 
-#Oauth2 Security
-security:
-  basic:
-  #    enabled: false
-  oauth2:
-    resource:
-      #      service-id: ${PREFIX:}resource
-      token-info-uri: http://localhost:8765/oauth/check_token
-    client:
-      client-id: web
-      client-secret: test
